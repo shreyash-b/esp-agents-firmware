@@ -49,12 +49,12 @@ The device is initially in unconfigured mode. You will need to set it up to conn
 <img src="https://github.com/espressif/esp-agents-firmware/wiki/images/EchoEarSpeaking.jpeg" width="200" style="display:block">
 
 * You can interrupt the agent anytime by touching the top of device.
-* When response playback stops, you can next question.
+* When response playback stops, you can ask your next question.
 * Device goes to sleep after 15 seconds of inactivity, you can wake it again by saying "Hi, ESP".
 
 ## Default Agent
 
-The device has a friend-like conversational agent out of the box. It has following capabilities:
+The device has a friend-like conversational agent out of the box. It has the following capabilities:
 * Having fun conversations
 * Knowing local time at user's location
 * Setting Reminders
@@ -64,10 +64,10 @@ The device has a friend-like conversational agent out of the box. It has followi
 
 ## Reset to Factory
 
-You can factory reset your device using either of following methods:
+You can factory reset your device using either of the following methods:
 * Touch and hold the top of device for 10 seconds. The screen will indicate that the reset is in progress.
 * Reflash the firmware using <a href="https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://raw.githubusercontent.com/espressif/esp-agents-firmware/refs/heads/main/docs/launchpad/friend/echo_ear.toml" target="_blank">ESP Launchpad</a>
-* Goto device settings in ESP RainMaker Home app -> Factory Reset
+* Go to device settings in ESP RainMaker Home app -> Factory Reset
 
 ## Changing the Agent on the Device
 

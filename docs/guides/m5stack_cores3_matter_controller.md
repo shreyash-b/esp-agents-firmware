@@ -33,7 +33,7 @@ This is required to connect the device to your home's Wi-Fi network, which is ne
 
 <img src="https://github.com/espressif/esp_agents_firmware/wiki/images/RMSelectGroup.PNG" width="200" style="display:block">
 
-- After provisioning, it will ask you to re-login as part of the Controller Configuration. (Note: On Android, you may have to tap on the device tile in Home Screem for login)
+- After provisioning, it will ask you to re-login as part of the Controller Configuration. (Note: On Android, you may have to tap on the device tile in Home Screen for login)
 
 <img src="https://github.com/espressif/esp_agents_firmware/wiki/images/RMReLogin.PNG" width="200" style="display:block">
 
@@ -52,7 +52,7 @@ This is required to connect the device to your home's Wi-Fi network, which is ne
 
 <img src="https://github.com/espressif/esp_agents_firmware/wiki/images/M5MCBootUp.jpg" width="200" style="display:block">
 
-- Now you can say "Hi ESP" to wake the device up.
+- Now you can say "Hi, ESP" to wake the device up.
 You could also wake the device up by tapping once on the screen of the device.
 The device will play a chime, indicating it's ready for conversation.
 
@@ -70,7 +70,7 @@ The device will play a chime, indicating it's ready for conversation.
 
 ## Default Agent
 
-The device has a Matter controller agent out of the box. It has following capabilities:
+The device has a Matter controller agent out of the box. It has the following capabilities:
 - Knowing local time at user's location
 - Adjusting volume of your device
 - Adjusting the emoji on display based on mood of the conversation
@@ -78,7 +78,7 @@ The device has a Matter controller agent out of the box. It has following capabi
 
 ## Reset to Factory
 
-You can factory reset your device using either of following methods:
+You can factory reset your device using either of the following methods:
 - Touch the screen and hold for 10 seconds
 - Reflash the firmware using [ESP Launchpad](https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://raw.githubusercontent.com/espressif/esp-agents-firmware/refs/heads/main/docs/launchpad/matter_controller/m5stack_cores3.toml)
 - Go to device settings in ESP RainMaker Home app -> Factory Reset
