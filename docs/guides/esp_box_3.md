@@ -44,20 +44,20 @@ The device is initially in unconfigured mode. You will need to set it up to conn
 
 <img src="https://github.com/espressif/esp_agents_firmware/wiki/images/ESPBox3Listening.png" width="150" style="display:block">
 
-- You can see the response on screen(green color).
+- You can see the response on screen (green color).
 
 <img src="https://github.com/espressif/esp_agents_firmware/wiki/images/ESPBox3Speaking.png" width="150" style="display:block">
 
-- When response playback stops, you can next question.
+- When response playback stops, you can ask your next question.
 - Device goes to sleep after 15 seconds of inactivity, you can wake it again by saying "Hi, ESP".
 
 **Note: Ensure that the microphone is not muted while using the device. You can look at the mute LED on the top for verifying microphone state.**
 
 ## Reset to Factory
 
-You can factory reset your device using either of following methods:
+You can factory reset your device using either of the following methods:
 * Reflash the firmware using <a href="https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://raw.githubusercontent.com/espressif/esp-agents-firmware/refs/heads/main/docs/launchpad/friend/esp_box_3.toml" target="_blank">ESP Launchpad</a>
-* Goto device settings in ESP RainMaker Home app -> Factory Reset
+* Go to device settings in ESP RainMaker Home app -> Factory Reset
 
 ## Changing the Agent on the Device
 
