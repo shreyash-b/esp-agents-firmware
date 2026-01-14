@@ -10,7 +10,7 @@ name: Publish Examples on Launchpad
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    # branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -29,7 +29,7 @@ concurrency:
 jobs:
   Build:
     # Disable the job in forks
-    if: ${{ github.repository_owner == 'espressif' }}
+    # if: ${{ github.repository_owner == 'espressif' }}
 
     runs-on: ubuntu-latest
     container:
@@ -38,6 +38,8 @@ jobs:
       matrix:
         example: [voice_chat, matter_controller]
         board: [echoear_core_board_v1_2, esp_box_3, m5stack_cores3, m5stack_cores3_h2_gateway]
+        # example: [voice_chat]
+        # board: [echoear_core_board_v1_2]
 
     steps:
       - uses: actions/checkout@v4
@@ -65,7 +67,7 @@ jobs:
 
   deploy:
     # Disable the job in forks
-    if: ${{ github.repository_owner == 'espressif' }}
+    # if: ${{ github.repository_owner == 'espressif' }}
 
     needs: Build
 
