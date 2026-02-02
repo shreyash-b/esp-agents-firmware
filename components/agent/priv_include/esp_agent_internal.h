@@ -57,9 +57,12 @@ typedef struct {
     TaskHandle_t message_task_handle;
     QueueHandle_t send_queue;
     TaskHandle_t send_task_handle;
-    EventGroupHandle_t event_group;            /* Event group for task stop signals */
+    EventGroupHandle_t event_group;               /* Event group for task stop signals */
     local_tool_node_t *local_tools;               /* Head of linked list of registered local tools */
 } esp_agent_t;
+
+/* This function will strip the https:// prefix from the menuconfig URL */
+char *esp_agents_get_api_endpoint(void);
 
 #ifdef __cplusplus
 }

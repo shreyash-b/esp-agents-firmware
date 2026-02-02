@@ -141,7 +141,7 @@ static esp_err_t build_ws_uri(const char *agent_id, const char *access_token, ch
         return ESP_ERR_INVALID_ARG;
     }
 
-    const char *api_url = ESP_AGENT_API_URL;
+    const char *api_url = esp_agents_get_api_endpoint();
 
     const char *scheme = ESP_AGENT_API_USE_TLS ? "wss" : "ws";
     size_t scheme_len = strlen(scheme) + 3; /*  for "://" */

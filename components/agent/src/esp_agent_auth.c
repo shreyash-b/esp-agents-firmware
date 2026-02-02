@@ -22,7 +22,7 @@ static const char *TAG = "esp_agent_auth";
 /** Build HTTPS URL for /user/auth/tokens from API URL. */
 static esp_err_t build_refresh_url(char **url_out)
 {
-    const char *api_url = ESP_AGENT_API_URL;
+    const char *api_url = esp_agents_get_api_endpoint();
     const char *path = USER_AUTH_TOKENS_PATH;
 
     const char *scheme = ESP_AGENT_API_USE_TLS ? "https" : "http";
