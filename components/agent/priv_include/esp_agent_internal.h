@@ -17,6 +17,8 @@ extern "C" {
 
 ESP_EVENT_DECLARE_BASE(AGENT_EVENT);
 
+#define ESP_AGENT_API_USE_TLS 1
+
 /* Event group bits for task stop signals */
 #define MESSAGE_TASK_STOP_BIT BIT0
 #define SEND_TASK_STOP_BIT    BIT1
